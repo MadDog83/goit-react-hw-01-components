@@ -22,13 +22,11 @@
   }
   
   .title {
-    padding-top: 25px;
-    padding-bottom: 25px;
     text-align: center;
     font-size: 45px;
     color: rgb(62, 61, 61);
     padding-top: 66px;
-    padding-bottom: 55px;
+    padding-bottom: 50px;
   }
 
   .label {
@@ -39,7 +37,7 @@
   
   .stat-list {
     list-style: none;
-    padding: 0;
+    padding: 5px;
     display: flex;
     justify-content: space-around;
     border-radius: 12px;
