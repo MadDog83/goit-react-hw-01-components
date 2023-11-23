@@ -1,8 +1,12 @@
 import React from 'react';
-import user from './user.json';
+import user from '../data/user.json';
+import data from '../data/data.json';
+import friends from '../data/friends.json';
+import transactions from '../data/transactions.json'; 
+import TransactionHistory from './TransactionHistory/TransactionHistory'; 
 import Profile from './Profile/Profile';
 import Statistics from './Statistics/Statistics';
-import data from './data.json';
+import FriendList from './Friendlist/Friendlist'; 
 
 export const App = () => {
   return (
@@ -23,7 +27,10 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistics title="Upload stats" stats={data} /> {/* Use the Statistics component with props */}
+      <Statistics title="Upload stats" stats={data} /> 
+      <FriendList friends={friends} /> 
+      <TransactionHistory items={transactions} /> 
+
     </div>
   );
 };
